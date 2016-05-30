@@ -1,0 +1,647 @@
+@media screen and (min-width:481px) and (max-width:768px){
+@font-face {
+    font-family: 'league_gothicregular';
+    src: url('../fonts/league_gothic-webfont.eot');
+    src: url('../fonts/league_gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/league_gothic-webfont.woff2') format('woff2'),
+         url('../fonts/league_gothic-webfont.woff') format('woff'),
+         url('../fonts/league_gothic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'league_gothicregular';
+    src: url('../fonts/league_gothic-webfont.eot');
+    src: url('../fonts/league_gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/league_gothic-webfont.woff2') format('woff2'),
+         url('../fonts/league_gothic-webfont.woff') format('woff'),
+         url('../fonts/league_gothic-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'league_gothicregular';
+    src: url('../fonts/league_gothic-webfont.eot');
+    src: url('../fonts/league_gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/league_gothic-webfont.woff2') format('woff2'),
+         url('../fonts/league_gothic-webfont.woff') format('woff'),
+         url('../fonts/league_gothic-webfont.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+
+}
+
+/*------------------------------------*\
+    НЕИЗМЕНЯЕМЫЕ БЛОКИ
+\*------------------------------------*/
+
+body{
+	font-family: 'league_gothicregular';
+}
+.wrapper{
+	width: 2400px;
+	background-color: #fff;
+	margin: 0 auto;
+}
+.header{
+	width: 2400px;
+	background-image: url('../img/bg.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: relative;
+	margin: 0 auto;
+}
+.transp-bar{
+	width: 2400px;
+	height: 400px;/*768*/
+	background: rgba(0, 0, 0, 0.2);
+	position: absolute;
+	top: 198px;
+	margin: 0 auto;
+}
+.article{
+	width: 2400px;
+	background: #F9F9F9;
+	position: relative;
+	margin: 0 auto;
+}
+.section{
+	width: 2400px;
+	background: linear-gradient(#745083, #322539);
+	margin: 0 auto;
+}
+.logos-bar{
+	width:2400px;
+	border-top: 1px solid #D8D8D8;
+	margin: 0 auto;
+}
+.top_footer{
+	width: 2400px;
+	background: #ECECEC;
+	margin: 0 auto;
+}
+.bottom_footer{
+	width: 2400px;
+	background: url('../img/footer_768.jpg');/*768*/
+	margin: 0 auto;
+}
+
+/*------------------------------------*\
+    АДАПТИВНЫЕ БЛОКИ
+\*------------------------------------*/
+
+.responsive_header{
+	width: 768px;
+	height: 753px;/*768*/
+	margin: 0 auto;
+	position: relative;
+}
+.responsive_section{
+	width: 768px;
+	height: 342px;/*768*/
+	margin: 0 auto;
+	position: relative;
+}
+.responsive_article{
+	width: 768px;
+	height: 430px;
+	margin: 0 auto;
+	padding-top: 58px;
+}
+.responsive_logos-bar{
+	width:768px;
+	height: 120px;
+	margin: 0 auto;
+}
+.responsive_top_footer{
+	width: 768px;
+	height: 394px;
+	margin: 0 auto;
+	position: relative;
+}
+.responsive_bottom_footer{
+	width: 768px;
+	height: 203px;/*768*/
+	margin: 0 auto;
+}
+
+/*------------------------------------*\
+    ОФОРМЛЕНИЕ И ПОЗИЦИОНИРОВАНИЕ БЛОКОВ
+\*------------------------------------*/
+
+
+.logo{
+	float: left;
+	margin-top: 20px;
+	margin-left:20px; /*768*/
+}
+/*------------------------------------*\
+   ВЕРХНЕЕ МЕНЮ
+\*------------------------------------*/
+.nav{
+	width: 715px;
+	height: 24px;
+	float: left;/*768*/
+	margin-top: 35px;
+}
+.menu{
+	display: block;
+}
+.menu li a{
+	float: left;
+	text-decoration: none;
+	font-size: 24px;
+	color: #fff;
+	padding: 0 6px;
+	margin-left: 12px;/*768*/
+	text-shadow: 0px 3px 1px rgba(150, 150, 150, 1);
+}
+.menu li a:hover{
+	border-bottom: 3px solid #EDBFFF;
+}
+/*------------------------------------*\
+    СЛАЙДЕР
+\*------------------------------------*/
+.left_arrow a{
+	
+	width: 24px;
+	height: 36px;
+	background: url('../img/arrows.png') 2px no-repeat;
+	position: absolute;
+	bottom: 338px;
+	left: 0px;
+	z-index: 500;
+}
+.right_arrow a{
+	width: 24px;
+	height: 36px;
+	background: url('../img/arrows.png') -26px no-repeat;
+	position: absolute;
+	bottom: 338px;
+	left: 750px;
+	z-index: 500;
+}
+.play{
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	z-index: 100;
+	top: 314px;
+	left: 1405px;
+	
+}
+.nav-cercle{
+	width: 120px;
+	height: 30px;
+	display: block;
+	position: absolute;
+	top: 635px;
+	left:537px;
+}
+.nav-cercle a{
+	width: 20px;
+	height: 20px;
+	background: url('../img/points-black.png') 1px -1px no-repeat; 
+	float: left;
+	margin-left: 3px;
+	
+	}
+.nav-cercle a:hover{
+	width: 20px;
+	height: 20px;
+background: url('../img/points-black.png') -22px 1px no-repeat;
+margin-left: 3px;
+}
+.iphone{
+	width: 250px;
+	height: 600px;
+	position: absolute;
+	bottom: 0px;
+	left: 425px;
+	
+}
+/*------------------------------------*\
+    ТЕКСТ ХЕДЕРА
+\*------------------------------------*/
+.text{
+	clear: both;
+}
+.text{
+	width: 300px;
+	height: 200px;
+	margin: 0 auto;
+	margin-top: 176px;
+	margin-left: 44px;
+	float: left;
+	text-shadow: 0px 3px 1px rgba(150, 150, 150, 1);
+	overflow: hidden;
+}
+.text p{
+	font-family: 'Open Sans Light', arial;
+	color: #fff;
+	font-size: 16px;
+	line-height: 1.4;
+	margin-bottom: 5px;
+	  
+}
+.text h2{
+	font-family: 'league_gothicregular';
+	font-size: 46px;
+	color: #fff;
+}
+.text span{
+	font-family: 'league_gothicregular';
+	text-transform: uppercase;
+	color: #EDBFFF;
+	font-size: 24px;
+	overflow: hidden;
+}
+
+/*------------------------------------*\
+   КОЛОНКИ ТЕКСТА
+\*------------------------------------*/
+
+
+.column1{
+	width: 150px;
+	height: 150px;
+	float: left;
+	padding-left: 81px;
+	padding-top: 79px;
+	position: relative;
+	
+}
+.column2{
+	width: 150px;
+	height: 150px;
+	float: left;
+	padding-left: 103px;
+	padding-top:79px;
+	position: relative;
+	
+}
+.column3{
+	width: 150px;
+	height: 150px;
+	float: right;
+	padding-top: 79px;
+	margin-right: 24px;
+	position: relative;
+	
+}
+
+.column1 h4, .column2 h4, .column3 h4{
+	font-size: 24px;
+	color: #fff;
+	/*text-shadow: 0px 3px 1px rgba(150, 150, 150, 1);*/
+	/*padding-left: 46px;*/
+}
+.column1 p, .column2 p, .column3 p{
+	height: 150px;
+	font-size: 16px;
+	color: #fff;
+	font-family: 'Open Sans Light', arial;
+	line-height: 1.5;
+	/*padding-left: 5px;*/
+	overflow: hidden;
+}
+.read_more{
+	font-family: 'league_gothicregular'; 
+	font-size: 18px;
+	color: #fff;
+	text-shadow: 0px 3px 1px rgba(150, 150, 150, 1);
+	text-decoration: none;
+	float: right;
+	padding-top: 2px;
+	padding-right: 4px;
+}
+.read_more:hover{
+	text-shadow: 0 0 10px #fff;
+}
+.more_blog_posts{
+	visibility: hidden;
+}
+
+.icon1{
+	width: 30px;
+	height: 28px;
+	background-image: url('../img/icons.png');
+	background-repeat: no-repeat;
+	background-position: 4px;
+	position: absolute;
+	left: 30px;
+	top: 80px;
+	
+}
+.icon2{
+	
+	width: 30px;
+	height: 28px;
+	background-image: url('../img/icons.png');
+	background-repeat: no-repeat;
+	background-position: 4px;
+	position: absolute;
+	left: 280px;
+	top: 80px;
+}
+.icon3{
+	background-position: 4px;
+	width: 30px;
+	height: 28px;
+	background-image: url('../img/icons.png');
+	background-repeat: no-repeat;
+	position: absolute;
+	left: 541px;
+	top: 80px;
+}
+.publication1{
+	float: left;
+	background: url('../img/fond.png') no-repeat;
+	background-size: 120%;
+	background-position: -20px;
+	height: 300px;
+	width:300px;
+	font-family: 'Open Sans Light', arial;
+	font-size: 16px;
+	line-height: 1.4;
+	position: relative;
+	margin-left: 81px;
+	margin-top: 20px;
+	
+}
+.publication1 p{
+	height: 150px;
+	width:230px;
+	overflow: hidden;
+}
+.photo{
+	position: absolute;
+	left: -60px;
+	top: 40px;
+}
+
+.publication1 h4{
+	width: 100px;
+	font-family: 'league_gothicregular';
+	font-size:24px;
+	text-transform: uppercase;
+	color: #EDBFFF;
+	line-height: 1;
+	padding-top: 50px;
+}
+.publication1 h4:before{
+	content:'PINGBULLER';
+	color: #454545;
+
+}
+.publication2{
+	float: right;
+	font-family:'Open Sans Light', arial;
+	height: 400px;
+	width: 350px;
+	margin-top: 60px;
+	position: relative;
+	padding-top: 10px;
+}
+.round1{
+	position: absolute;
+	top: 58px;
+}
+.round2{
+	position: absolute;
+	top: 127px;
+}
+.round3{
+	position: absolute;
+	top: 190px;
+}
+
+.article1 {
+	padding-left: 60px;
+}
+.publication2 h4{
+	font-family: 'league_gothicregular';
+	font-size:30px;
+	color: #454545;
+	
+}
+
+.article1 p{
+	height: 18px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	color: #454545;
+	padding-left: 5px;
+	padding-top: 8px;
+	margin-bottom: 7px;
+	overflow: hidden;
+}
+.article1 h6{
+	clear: both;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	color: #454545;
+	padding-left: 5px;
+	padding-top: 20px;
+}
+.read_more_here {
+	font-family: 'league_gothicregular';
+	font-size:18px;
+	color: #454545;
+	text-decoration: none;
+	float: right;
+	margin-right: 31px;
+	margin-top: 12px;
+}
+/*------------------------------------*\
+    ПЕРЕКЛЮЧАТЕЛИ
+\*------------------------------------*/
+.nav-cercle_bottom{
+	width: 120px;
+	height: 30px;
+	display: block;
+	position: absolute;
+	top: 396px;
+	left: 970px;
+}
+.nav-cercle_bottom a{
+	width: 20px;
+	height: 20px;
+	background: url('../img/points.png') -22px 1px no-repeat; 
+	float: left;
+	margin-left: 3px;
+	
+	}
+.nav-cercle_bottom a:hover{
+	width: 20px;
+	height: 20px;
+background: url('../img/points.png') 1px -1px no-repeat;
+margin-left: 3px;
+}
+/*------------------------------------*\
+    ЛОГОТИПЫ
+\*------------------------------------*/
+.logos{
+	margin: 0 auto;
+	position: relative;
+}
+.logo1{
+	position: absolute;
+	top: 25px;
+	left: 24px;
+}
+.logo2{
+	position: absolute;
+	top: 25px;
+	left: 148px;
+}
+.logo3{
+	position: absolute;
+	top: 25px;
+	left: 271px;
+}
+.logo4{
+	position: absolute;
+	top: 25px;
+	left: 395px;
+}
+.logo5{
+	position: absolute;
+	top: 45px;
+	left: 505px;
+}
+.logo6{
+	position: absolute;
+	top: 25px;
+	left: 662px;
+}
+/*------------------------------------*\
+    ТЕКСТ ФУТЕРА
+\*------------------------------------*/
+.pigbuller{
+	float: left;
+	width: 300px;
+	height: 300px;
+	margin-top: 100px;
+	visibility: hidden;
+	position: absolute;
+    top: -9999px;
+}
+.pigbuller img{
+	margin-bottom: 15px;
+}
+.pigbuller span{
+	font-family: georgia;
+	font-style: italic;
+	font-size: 16px;
+	color: #c5c5c5;
+}
+.pigbuller p, .resent_comments p, .news_categories p ,.news_categories2 p,.news_categories3 p{
+	font-family:'Open Sans Light', arial;
+	color: #787878;
+	line-height: 1.5;
+	padding-top: 10px;
+}
+.resent_comments h6, .news_categories h6,.news_categories2 h6,.news_categories3 h6 {
+	font-family:'league_gothicregular';
+	font-size: 24px;
+	color: #454545;
+}
+
+.resent_comments{
+	float: left;
+	width: 300px;
+	height: 250px;
+	margin-top: 95px;
+	margin-left: 15px;
+	padding-left: 15px;
+	visibility: hidden;
+	position: absolute;
+    top: -9999px;
+}
+.news_categories{
+	float: left;
+	width: 200px;
+	height: 180px;
+	margin-top: 100px;
+	margin-left: 20px;
+	overflow: hidden;
+	
+}
+.news_categories2{
+	float: left;
+	width: 200px;
+	height: 180px;
+	margin-top: 100px;
+	margin-left: 65px;
+	overflow: hidden;
+	visibility: visible;
+	position: absolute;
+	top: 0;
+	left: 220px;
+	
+}
+.news_categories3{
+	float: left;
+	width: 200px;
+	height: 180px;
+	margin-top: 101px;
+	margin-left: 64px;
+	overflow: hidden;
+	visibility: visible;
+	position: absolute;
+	left: 485px;
+	top: 0;
+}
+/*------------------------------------*\
+    МЕНЮ ФУТЕРА
+\*------------------------------------*/
+.navf{
+	width: 715px;
+	height: 24px;
+	float: left;
+	margin-top: 48px;
+	margin-left: 20px;
+}
+.menu_footer{
+	display: block;
+	
+}
+.menu_footer li a{
+	float: left;
+	text-decoration: none;
+	font-size: 20px;
+	color: #fff;
+	
+	margin-right: 40px;
+	text-shadow: 0px 3px 1px rgba(150, 150, 150, 1);
+}
+.menu_footer li a:hover{
+	border-bottom: 3px solid #EDBFFF;
+}
+/*------------------------------------*\
+    КОПИРАЙТ
+\*------------------------------------*/
+.responsive_bottom_footer p{
+	font-family:'Open Sans Light';
+	font-size: 12px;
+	color: #fff;
+	float: right;
+	margin-top: 30px;
+	margin-right: 25px;
+	font-weight: 100px;
+}
+.responsive_bottom_footer span{
+	font-family:'Open Sans';
+	font-size: 12px;
+	color: #fff;
+	font-weight: 600px;
+	
+}
+}
+
+	
